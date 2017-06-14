@@ -24,10 +24,34 @@
 //   return '"Hello, ' + firstName + " " + lastName + '; nice to meet you."';
 // }
 
-function literal(firstName, lastName) {
-  return `"Hello, ${firstName} ${lastName}; nice to meet you."`;
+// function literal(firstName, lastName) {
+//   return `"Hello, ${firstName} ${lastName}; nice to meet you."`;
+// }
+
+// console.log(literal("Tom", "Riddle"));
+
+function d1(){
+  try {
+    var x = 23;
+    var f = 4535;
+    alert(x+p);
+  } catch(err) {
+      alert("There is an syntax error");
+  }
 }
 
+function parse(a){
+  let result = parseInt(a);
+  if (!result){
+    throw new Error();
+  }
+  return result;
+}
+  function exceptionHandle(a){
+    try {
+      return parse(1);
+    } catch(err){
+      return "Error";
+    }
 
-
-console.log(literal("Tom", "Riddle"));
+  }
