@@ -30,28 +30,39 @@
 
 // console.log(literal("Tom", "Riddle"));
 
-function d1(){
-  try {
-    var x = 23;
-    var f = 4535;
-    alert(x+p);
-  } catch(err) {
-      alert("There is an syntax error");
-  }
+// function d1(){
+//   try {
+//     var x = 23;
+//     var f = 4535;
+//     alert(x+p);
+//   } catch(err) {
+//       alert("There is an syntax error");
+//   }
+// }
+//
+// function parse(a){
+//   let result = parseInt(a);
+//   if (!result){
+//     throw new Error();
+//   }
+//   return result;
+// }
+//   function exceptionHandle(a){
+//     try {
+//       return parse(1);
+//     } catch(err){
+//       return "Error";
+//     }
+//
+//   }
+
+var animalArray = ["dog", "cat", "horse"];
+
+function removeFromArray(a){
+  var idx = animalArray.indexOf(a);
+  console.log(idx);
+  animalArray.splice(idx,1);
+  console.log(removed);
 }
 
-function parse(a){
-  let result = parseInt(a);
-  if (!result){
-    throw new Error();
-  }
-  return result;
-}
-  function exceptionHandle(a){
-    try {
-      return parse(1);
-    } catch(err){
-      return "Error";
-    }
-
-  }
+removeFromArray("cat");
