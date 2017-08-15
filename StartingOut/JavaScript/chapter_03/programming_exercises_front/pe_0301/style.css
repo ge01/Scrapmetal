@@ -16,3 +16,31 @@
 .miColor {
   color: blue;
 }
+
+h1 {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+p {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.inputBox {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.buttonsTwo {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+button {
+  margin-top: 7px;
+}

@@ -14,7 +14,9 @@ console.log(kmDisplay);
 console.log(c1);
 
 c1Button.addEventListener("click", function(){
-  kMeters++;
+  //kMeters++;
+  kMeters = numInput.value;
+  
   console.log(kMeters);
   kmDisplay.textContent = kMeters;
 
@@ -37,8 +39,16 @@ resetButton.addEventListener("click", function(){
 numInput.addEventListener("change", function(){
   //p.textContent = "Value Changed";
   startValueDisplay.textContent = numInput.value;
-  kmDisplay = numInput.value;
+  kMeters = numInput.value;
+  kmDisplay.textContent = numInput.value;
 
   console.log(numInput.value);
+
+  miles = kMeters * 0.6214;
+
+  miDisplay.textContent = miles.toFixed(2);
+
+  kmDisplay.classList.add("kmColor");
+  miDisplay.classList.add("miColor");
 
 });
