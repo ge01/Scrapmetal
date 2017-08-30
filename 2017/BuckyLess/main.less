@@ -1,0 +1,24 @@
+@grass: #006611;
+
+h1{
+  color: @grass;
+  font-family: Tahoma, sans-serif;
+}
+p {
+  color: @grass;
+}
+.panel {
+  border: 3px solid dodgerblue;
+  background: lightgreen;
+  margin: 10px;
+}
+.little-panel {
+  .panel;
+  font-size: 12px;
+  padding: 5px;
+}
+.big-panel {
+  .panel
+  font-size: 32px;
+  padding: 20px;
+}
