@@ -1,0 +1,3 @@
+".\Objects\Toggle.obj" 
+TO ".\Objects\Toggle" 
+PRINT(".\Listings\Toggle.m51") RAMSIZE(256) 
