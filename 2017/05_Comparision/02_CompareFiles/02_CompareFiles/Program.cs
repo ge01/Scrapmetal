@@ -10,21 +10,30 @@ namespace _02_CompareFiles
     {
         static void Main(string[] args)
         {
-            StreamReader sr = new StreamReader("USB_Legacy_Disabled.txt");
-
-            string line = "";
-            int counter = 0;
-
-            while ((line = sr.ReadLine()) != null)
+            string[] Lines1 = File.ReadAllLines("USB_Legacy_Disabled.txt");
+            string[] Lines2 = File.ReadAllLines("USB_UEFI_Disabled.txt");
+            for (int line = 0; line < Lines1.Length; line++)
             {
-                counter++;
-
-                Console.WriteLine("{0}:{1}", counter, line);
+                if (line < Lines2.Length)
+                {
+                    if (Lines1[line].Equals(Lines2[line]))
+                    {
+                        // lines from both the file are same
+                        Console.WriteLine("lines from both the file are same");
+                    }
+                    else
+                    {
+                        // Lines are not same
+                        Console.WriteLine("Lines are not same");
+                    }
+                }
+                else
+                {
+                    // Doesnt exits in second file
+                    Console.WriteLine("Doesnt exits in second file");
+                }                
             }
-
-            Console.WriteLine("we have {0} names in the txt file", counter);
             Console.ReadLine();
-
         }
     }
 }

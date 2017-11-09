@@ -1,0 +1,40 @@
+﻿########################################################################################################
+----------------------------
+| USB UEFI Disabled: #0001 |
+----------------------------
+---------------------------------------------------------------------------------------------------------
+HP WMI (Public) Settings - UEFI USB Enabled
+===========================================
+    Real Testcase Name = HP WMI (Public) Settings
+    Operation = Get
+    Setting = UEFI Boot Order
+    Expected Error (Hex) = 0x00
+    Ignore Error = No
+    ========================================
+
+10/30/2017 16:26:59.349                         Name: UEFI Boot Order
+10/30/2017 16:26:59.349                        Value: HDD:USB:1(Disabled),HDD:M.2:1,NETWORK IPV4:EMBEDDED:1,NETWORK IPV6:EMBEDDED:1
+10/30/2017 16:26:59.349                         Path: \Advanced\Boot Options
+10/30/2017 16:26:59.349                   IsReadOnly: False
+10/30/2017 16:26:59.349                  DisplayInUI: True
+10/30/2017 16:26:59.349     RequiresPhysicalPresence: False
+10/30/2017 16:26:59.349                     Sequence: 21111
+10/30/2017 16:26:59.349                Prerequisites: 
+10/30/2017 16:26:59.349                SecurityLevel: Administrator Only
+10/30/2017 16:26:59.365                        Class: HP_BIOSOrderedList
+10/30/2017 16:26:59.365                     Elements: 
+10/30/2017 16:26:59.380                               0: HDD:USB:1(Disabled)
+10/30/2017 16:26:59.380                               1: HDD:M.2:1
+10/30/2017 16:26:59.380                               2: NETWORK IPV4:EMBEDDED:1
+10/30/2017 16:26:59.380                               3: NETWORK IPV6:EMBEDDED:1
+
+10/30/2017 16:26:59.396     Validating WMI properties of setting "UEFI Boot Order"
+10/30/2017 16:26:59.396     Verify if 'Name' is blank, 'Sequence' is 0 and 'Prerequisites' is empty
+10/30/2017 16:26:59.396     Verify if 'Sequence' is 0, 'Name' is blank
+10/30/2017 16:26:59.396     Verify 'DisplayInUI' is 0 or 1
+10/30/2017 16:26:59.412     Verify 'IsReadOnly' is 0 or 1
+10/30/2017 16:26:59.412     Verify 'RequiresPhysicalPresence' is 0 or 1
+10/30/2017 16:26:59.427     Verify 'Path' is valid
+10/30/2017 16:26:59.427     Verify 'Prerequisites' are valid WQL statements
+10/30/2017 16:26:59.443     Verify 'Prerequisites' function correctly
+10/30/2017 16:26:59.446     Verify 'Value' list matches 'Elements' list
