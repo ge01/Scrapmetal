@@ -10,17 +10,27 @@ namespace _02_CompareFiles
     {
         static void Main(string[] args)
         {
-            int i;
+            //int i;
+            StreamWriter sw = new StreamWriter("Comparison_Result.txt");
+
 
             string[] Lines1 = File.ReadAllLines("USB_Legacy_Disabled.txt");
             string[] Lines2 = File.ReadAllLines("USB_UEFI_Disabled.txt");
 
             Console.WriteLine(Lines1[22]);
 
-            if (Lines1[22].Contains("Administrator Only"))
+            if (Lines1[22].Contains("Administrator Only") == Lines2[22].Contains("Administrator Only"))
             {
-                Console.WriteLine("Administrator Only was found");
+                Console.WriteLine("Result = Equal");
+                sw.WriteLine("Result = Equal");
+            } else
+            {
+                Console.WriteLine("Result = Not Equal");
+                sw.WriteLine("Result = Not Equal");
             }
+
+            sw.Flush();
+            sw.Close();
             //for(i=0; i <= 22; i++)
             //{
             //    Console.WriteLine(Lines1[i]);
