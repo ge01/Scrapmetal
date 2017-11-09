@@ -17,6 +17,10 @@ namespace _02_CompareFiles
 
             Console.WriteLine(Lines1[22]);
 
+            if (Lines1[22].Contains("Administrator Only"))
+            {
+                Console.WriteLine("Administrator Only was found");
+            }
             //for(i=0; i <= 22; i++)
             //{
             //    Console.WriteLine(Lines1[i]);
